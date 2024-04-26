@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masakan Padang</title>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Ini adalah Internal CSS -->
+<style>
+    h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .time-list {
+  padding: 1.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Lebih halus */
+  display: flex; /* Menentukan display model */
+  align-items: center; /* Memusatkan item secara vertikal */
+  justify-content: space-between; /* Menjaga jarak antar item */
+  background-color: #fff; /* Warna latar belakang putih */
+}
+
+/* Menghapus border-bottom untuk elemen terakhir */
+.time-list:last-child {
+  border-bottom: none;
+}
+</style>
+
+</head>
+<body>
+        <style>
+                #scrollToTop {
+                    display: none;
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 99;
+                    font-size: 18px;
+                    background-color: #007bff;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    padding: 10px 20px;
+                }
+            
+                #scrollToTop:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container flex">
+                <a href="#" class="logo-content flex">
+                    <i class='bx bx-coffee logo-icon'></i>
+                    <span class="logo-text">Warung Padang.</span>
+                </a>
+
+                <div class="menu-content">
+                        <ul class="menu-list flex">
+                            <li><a href="home.html" class="nav-link ">home</a></li>
+                            <li><a href="About.html" class="nav-link">about</a></li>
+                            <li><a href="Menu.html" class="nav-link active-navlink">menu</a></li>
+                            <li><a href="Review.html" class="nav-link">review</a></li>
+                        </ul>
+
+                        <div class="media-icons flex">
+                                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                        </div>
+
+                        <i class='bx bx-x navClose-btn'></i>
+                    </div>
+                    
+                    <div class="contact-content flex">
+                        <i class='bx bx-phone phone-icon' ></i>
+                        <span class="phone-number">0821-3337-83817</span>
+                    </div>
+
+                    <i class='bx bx-menu navOpen-btn'></i>
+            </nav>
+    
+</header>
+<!-- Menu Section -->
+<section class="section menu" id="menu">
+    <div class="menu-container container">
+            <div class="meu-text">
+                <!-- Ini adalah inline CSS -->
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;" class="section-subtitle"><i>Menu Kita </i></h4>
+                    <h2 class="section-title">Menu favorit Masakan Padang</h2>
+                    <p class="section-description">
+                       
+Nikmati eksklusivitas masakan Padang kami yang autentik dan istimewa, diracik dengan bumbu-bumbu pilihan dan disajikan dengan kelembutan yang tak tertandingi.
+                    </p>
+            </div>
+
+            <div class="menu-content">
+                    <div class="menu-items">
+                            <div class="menu-item flex">
+                                    <img src="images/Rendang.jpg" alt="" class="menu-img">
+
+                                    <div class="menuItem-details">
+                                            <h4 class="menuItem-topic">Rendang</h4>
+                                            <p class="menuItem-des">Rendang eksklusif adalah perpaduan sempurna dari bumbu rempah yang dipilih secara khusus dan teknik memasak tradisional yang disempurnakan. Setiap suapannya menghadirkan kelezatan yang tiada tara, dengan tekstur daging yang lembut dan kuah yang kaya akan rasa.</p>
+                                    </div>
+
+                                    <div class="menuItem-price flex">
+                                            <span class="discount-price">Rp.47.999</span>
+                                            <span class="real-price">Rp.69.999</span>
+                                    </div>
+                            </div>
+                            <div class="menu-item flex">
+                                    <img src="images/sate.jpg" alt="" class="menu-img">
+
+                                    <div class="menuItem-details">
+                                            <h4 class="menuItem-topic">Sate Padang</h4>
+                                            <p class="menuItem-des">Sate Padang istimewa ini menghadirkan potongan daging yang lembut dan aromatik, disajikan dengan bumbu kacang yang kaya rasa dan sambal pedas yang menggugah selera. Setiap tusukan sate memberikan cita rasa yang menggoda, mengingatkan akan kelezatan kuliner khas Padang yang autentik.
+
+                                            </p>
+                                    </div>
+
+                                    <div class="menuItem-price flex">
+                                            <span class="discount-price">Rp.39.999</span>
+                                            <span class="real-price">Rp.59.999</span>
+                                    </div>
+                            </div>
+                            <div class="menu-item flex">
+                                    <img src="images/pop.jpeg" alt="" class="menu-img">
+
+                                    <div class="menuItem-details">
+                                            <h4 class="menuItem-topic">Ayam PoP</h4>
+                                            <p class="menuItem-des">Ayam Pop, hidangan klasik dari ranah Minang, merupakan perpaduan sempurna dari ayam yang empuk dengan bumbu rempah yang meresap ke dalam setiap seratnya. Disajikan dengan nasi panas, ayam pop menawarkan sensasi rasa yang memikat, membangkitkan kenangan akan masakan rumahan yang hangat dan lezat.</p>
+                                    </div>
+
+                                    <div class="menuItem-price flex">
+                                            <span class="discount-price">Rp.34.999</span>
+                                            <span class="real-price">Rp.48.999</span>
+                                    </div>
+                            </div>
+                            <div class="menu-item flex">
+                                    <img src="images/ikan.jpg" alt="" class="menu-img">
+
+                                    <div class="menuItem-details">
+                                            <h4 class="menuItem-topic">Gulai Ikan</h4>
+                                            <p class="menuItem-des">Gulai Ikan Padang yang istimewa ini menampilkan potongan ikan segar yang direndam dalam kuah gulai yang kaya rempah. Setiap suapannya menghadirkan kombinasi sempurna antara cita rasa ikan yang lembut dengan rempah-rempah yang melimpah, menciptakan sensasi rasa yang memikat. Gulai Ikan Padang ini merupakan perpaduan harmonis dari tradisi kuliner Padang yang autentik dengan kelezatan yang tak terlupakan.</p>
+                                    </div>
+
+                                    <div class="menuItem-price flex">
+                                            <span class="discount-price">Rp.79.999</span>
+                                            <span class="real-price">Rp.124.999</span>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <table class="time-table">
+                        <tr class="table-header">
+                          <th class="time-topic">Jam Buka Masakan Padang</th>
+                          
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Senin</td>
+                          <td class="crowd-time">07.00 Pagi - 22.00 Malam</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Selasa</td>
+                          <td class="crowd-time">07.00 Pagi - 22.00 Malam</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Rabu</td>
+                          <td class="crowd-time">07.00 Pagi - 22.00 Malam</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Kamis</td>
+                          <td class="crowd-time">07.00 Pagi - 22.00 Malam</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Jumat</td>
+                          <td class="crowd-time">07.00 Pagi - 22.00 Malam</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Sabtu</td>
+                          <td class="crowd-time">07.00 Pagi - 22.00 Malam</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                        <tr class="time-list">
+                          <td class="open-day">Minggu</td>
+                          <td class="open-time">Tutup</td>
+                          <td class="crowd-time"></td>
+                        </tr>
+                      </table>       
+</section>
+
+
+<!-- Brand Section -->
+<section class="section brand">
+    <div class="brand-container container">
+            <h4 class="section-subtitle"><i>Cabang Masakan Padang</i></h4>
+
+            <div class="brand-images">
+                    <div class="brand-image">
+                            <img src="images/b1.png" alt="" class="brand-img">
+                    </div>
+                    <div class="brand-image">
+                            <img src="images/b2.png" alt="" class="brand-img">
+                    </div>
+                    <div class="brand-image">
+                            <img src="images/b3.png" alt="" class="brand-img">
+                    </div>
+                    <div class="brand-image">
+                            <img src="images/b4.png" alt="" class="brand-img">
+                    </div>
+                    <div class="brand-image">
+                            <img src="images/b5.png" alt="" class="brand-img">
+                    </div>
+            </div>
+    </div>
+</section>
+
+<button onclick="scrollToTop()" id="scrollToTop">Scroll to Top</button>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTop").style.display = "block";
+        } else {
+            document.getElementById("scrollToTop").style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<!-- Footer Section -->
+<footer class="section footer">
+    <div class="footer-container container">
+            <div class="footer-content"> 
+                <a href="#" class="logo-content flex">
+                        <i class='bx bx-coffee logo-icon'></i>
+                        <span class="logo-text">Masakan Padang</span>
+                    </a>
+
+                    <p class="content-description">Nikmati eksklusivitas masakan Padang kami yang autentik dan istimewa, diracik dengan bumbu-bumbu pilihan dan disajikan dengan kelembutan yang tak tertandingi.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+                        
+                        <div class="location-text">
+                                Jl. Ketintang No.89, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur 60231
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-linkContent">
+                    <ul class="footer-links">
+                        <h4 class="footerLinks-title">Fasilitas</h4>
+
+                        
+                        <li><a href="#" class="footer-link">Ruang Rapat</a></li>
+                        <li><a href="#" class="footer-link">Ruang Acara</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Fasilitas</h4>
+
+                            <li><a href="#" class="footer-link">Makanan</a></li>
+                            <li><a href="#" class="footer-link">Minuman</a></li>
+                            
+                    </ul>
+                    <ul class="footer-links">
+                        <h4 class="footerLinks-title">Dukungan</h4>
+
+                        <li><a href="#" class="footer-link">Tentang Kami</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="footer-link">Bantu Kami</a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="footer-copyRight">&#169; Masakan Padang Indonesia.</div>
+</footer>
+
+<!-- Scroll Up -->
+<a href="#home" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+</a>
+
+</main>
+
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="js/scrollreveal.js"></script>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navOpenBtn = document.querySelector('.navOpen-btn');
+    const navCloseBtn = document.querySelector('.navClose-btn');
+    const menuContent = document.querySelector('.menu-content');
+
+    // Function to open the navigation menu
+    function openNavMenu() {
+        menuContent.classList.add('open');
+    }
+
+    // Function to close the navigation menu
+    function closeNavMenu() {
+        menuContent.classList.remove('open');
+    }
+
+    // Event listener for opening navigation menu
+    navOpenBtn.addEventListener('click', openNavMenu);
+
+    // Event listener for closing navigation menu
+    navCloseBtn.addEventListener('click', closeNavMenu);
+});
+
+</script>
+</body>
+</html>

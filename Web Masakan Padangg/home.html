@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masakan Padang</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Ini adlah External CSS -->
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Ini adlah Internal CSS -->
+    <style>
+        h4 {
+            color: ivory;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        #scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        #scrollToTop:hover {
+            background-color: #0056b3;
+        }
+    </style>
+   <!-- Header -->
+   <header class="header">
+        <nav class="nav container flex">
+                <a href="#" class="logo-content flex">
+                    <i class='bx bx-coffee logo-icon'></i>
+                    <span class="logo-text">Warung Padang.</span>
+                </a>
+
+                <div class="menu-content">
+                        <ul class="menu-list flex">
+                            <li><a href="home.html" class="nav-link active-navlink">home</a></li>
+                            <li><a href="About.html" class="nav-link">about</a></li>
+                            <li><a href="Menu.html" class="nav-link ">menu</a></li>
+                            <li><a href="Review.html" class="nav-link">review</a></li>
+                        </ul>
+
+                        <div class="media-icons flex">
+                                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                        </div>
+
+                        <i class='bx bx-x navClose-btn'></i>
+                    </div>
+                    
+                    <div class="contact-content flex">
+                        <i class='bx bx-phone phone-icon' ></i>
+                        <span class="phone-number">0821-3337-83817</span>
+                    </div>
+
+                    <i class='bx bx-menu navOpen-btn'></i>
+            </nav>
+    
+</header>
+<!-- Home Section -->
+<main>
+    <section class="home" id="home">
+            <div class="home-content">
+                    <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                            <img src="images/Rendang.jpg" alt="" class="home-img">
+
+                                            <div class="home-details">
+                                                    <div class="home-text">
+                                                        <h4 style="color: gold;" class="homeSubtitle">Menu Favorite</h4>
+                                                            <h2  class="homeTitle">RENDANG<br><h2 style="color: rgb(248, 244, 5);">Dibuat dengan Rempah Khusus </h2></h2>
+                                                    </div>
+
+                                                   <a href="Menu.html"><button class="button">HARGA</button></a> 
+                                            </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                            <img src="images/sate.jpg" alt="" class="home-img">
+
+                                            <div class="home-details">
+                                                    <div class="home-text">
+     
+                                                        <h4 style="color: gold;" class="homeSubtitle">Menu Favorite</h4>
+                                                        <!-- Ini adalah contoh CSS Inline-->
+                                                            <h2 style="color:white;" class="homeTitle">SATE PADANG  <br> <h2 style="color:bisque;">Bumbu Kacang Lezat Bergizi </h2></h2>
+                                                    </div>
+
+                                                    <a href="Menu.html"><button class="button">HARGA</button></a>
+                                            </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                            <img src="images/ikan.jpg" alt="" class="home-img">
+
+                                            <div class="home-details">
+                                                    <div class="home-text">
+                                                            <h4 style="color:gold;"class="homeSubtitle">Menu Favorite</h4>
+                                                            <h2 class="homeTitle">Gulai Ikan <br> <h2 style="color: rgb(248, 244, 5);">Dibuat Dengan Rempah Pilihan </h2></h2>
+                                                    </div>
+
+                                                <a href="Menu.html">  <button class="button">HARGA</button></a>  
+                                            </div>
+                                    </div>
+                            </div>
+
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                            <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="scrollToTop">Scroll to Top</button>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTop").style.display = "block";
+        } else {
+            document.getElementById("scrollToTop").style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+   <!-- Footer Section -->
+<footer class="section footer">
+        <div class="footer-container container">
+                <div class="footer-content"> 
+                    <a href="#" class="logo-content flex">
+                            <i class='bx bx-coffee logo-icon'></i>
+                            <span class="logo-text">Masakan Padang</span>
+                        </a>
+    
+                        <p class="content-description">Nikmati eksklusivitas masakan Padang kami yang autentik dan istimewa, diracik dengan bumbu-bumbu pilihan dan disajikan dengan kelembutan yang tak tertandingi.</p>
+    
+                        <div class="footer-location flex">
+                            <i class='bx bx-map map-icon'></i>
+                            
+                            <div class="location-text">
+                                    Jl. Ketintang No.89, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur 60231
+                            </div>
+                        </div>
+                </div>
+    
+                <div class="footer-linkContent">
+                        <ul class="footer-links">
+                            <h4 class="footerLinks-title">Fasilitas</h4>
+    
+                            
+                            <li><a href="#" class="footer-link">Ruang Rapat</a></li>
+                            <li><a href="#" class="footer-link">Ruang Acara</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">Fasilitas</h4>
+    
+                                <li><a href="#" class="footer-link">Makanan</a></li>
+                                <li><a href="#" class="footer-link">Minuman</a></li>
+                                
+                        </ul>
+                        <ul class="footer-links">
+                            <h4 class="footerLinks-title">Dukungan</h4>
+    
+                            <li><a href="#" class="footer-link">Tentang Kami</a></li>
+                            <li><a href="#" class="footer-link">FAQs</a></li>
+                            <li><a href="#" class="footer-link">Kebijakan Privasi</a></li>
+                            <li><a href="#" class="footer-link">Bantu Kami</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="footer-copyRight">&#169; Masakan Padang Indonesia.</div>
+    </footer>
+    
+    <!-- Scroll Up -->
+    <a href="#home" class="scrollUp-btn flex">
+            <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+    </a>
+    
+    </main>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navOpenBtn = document.querySelector('.navOpen-btn');
+    const navCloseBtn = document.querySelector('.navClose-btn');
+    const menuContent = document.querySelector('.menu-content');
+
+    // Function to open the navigation menu
+    function openNavMenu() {
+        menuContent.classList.add('open');
+    }
+
+    // Function to close the navigation menu
+    function closeNavMenu() {
+        menuContent.classList.remove('open');
+    }
+
+    // Event listener for opening navigation menu
+    navOpenBtn.addEventListener('click', openNavMenu);
+
+    // Event listener for closing navigation menu
+    navCloseBtn.addEventListener('click', closeNavMenu);
+});
+
+      </script>
+      
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navOpenBtn = document.querySelector('.navOpen-btn');
+    const navCloseBtn = document.querySelector('.navClose-btn');
+    const menuContent = document.querySelector('.menu-content');
+
+    // Function to open the navigation menu
+    function openNavMenu() {
+        menuContent.classList.add('open');
+    }
+
+    // Function to close the navigation menu
+    function closeNavMenu() {
+        menuContent.classList.remove('open');
+    }
+
+    // Event listener for opening navigation menu
+    navOpenBtn.addEventListener('click', openNavMenu);
+
+    // Event listener for closing navigation menu
+    navCloseBtn.addEventListener('click', closeNavMenu);
+});
+
+</script>
+     
+    
+    </body>
+    </html>
